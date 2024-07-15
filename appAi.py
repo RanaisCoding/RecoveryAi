@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load your trained model
-model = joblib.load(r"C:\Users\alani\Downloads\model.pkl")
+model = joblib.load(r"model.pkl")
 
 @app.route('/predict', methods=['POST'])
 def predict():
